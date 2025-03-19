@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdinfp_controlador_javafx.ControladoresInscripciones.ControladorMostrarInscripcionSocio">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="30.0" layoutY="39.0" text="El socio ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="campoSocioBuscado" layoutX="97.0" layoutY="38.0" prefHeight="18.0" prefWidth="81.0" text="Label">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="38.0" prefHeight="18.0" prefWidth="241.0" text="esta inscrito en las siguientes Excursiones:">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Label>
+             <TableView fx:id="vistaGridExcursiones" layoutX="30.0" layoutY="77.0" prefHeight="270.0" prefWidth="402.0">
+                 <columns>
+                     <TableColumn fx:id="colNombre" prefWidth="91.00000190734863" text="Nombre" />
+                     <TableColumn fx:id="colFechaInicio" prefWidth="74.5999984741211" style="-fx-alignment: CENTER;" text="Fecha" />
+                     <TableColumn fx:id="colNumeroDias" prefWidth="42.0" style="-fx-alignment: CENTER_RIGHT;" text="Días" />
+                     <TableColumn fx:id="colPrecioInscripcion" prefWidth="56.20002746582031" style="-fx-alignment: CENTER_RIGHT;" text="Precio" />
+                     <TableColumn fx:id="colDescripcion" prefWidth="137.60000000000002" text="Descripción" />
+                 </columns>
+             </TableView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="441.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../media/Senderos_y_Montanas_logo.png" />
+               </image></ImageView>
+            <Button fx:id="btnVolverMenuPrincipal" layoutX="519.0" layoutY="321.0" mnemonicParsing="false" onAction="#onVolverMenuPrincipalButtonClick" text="Menu Principal" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

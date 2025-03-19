@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdinfp_controlador_javafx.ControladoresSocios.ControladorMostrarFacturaSocio">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label layoutX="224.0" layoutY="32.0" prefHeight="20.0" prefWidth="253.0" text="Mostrar factura de un socio">
+          <font>
+            <Font name="System Bold" size="14.0" />
+          </font>
+        </Label>
+        <Label layoutX="64.0" layoutY="85.0" prefHeight="18.0" prefWidth="138.0" text="Introduce el id del socio" />
+        <Label layoutX="61.0" layoutY="143.0" prefHeight="18.0" prefWidth="94.0" text="Nº Socio" />
+        <Label layoutX="61.0" layoutY="179.0" prefHeight="18.0" prefWidth="94.0" text="Nombre" />
+        <Label layoutX="61.0" layoutY="220.0" prefHeight="18.0" prefWidth="94.0" text="Nif" />
+        <Label layoutX="61.0" layoutY="255.0" prefHeight="18.0" prefWidth="94.0" text="Tipo" />
+        <Label layoutX="61.0" layoutY="297.0" prefHeight="18.0" prefWidth="94.0" text="Importe a pagar" />
+
+        <TextField fx:id="campoIdCambio" layoutX="216.0" layoutY="81.0" prefHeight="26.0" prefWidth="194.0" />
+        <TextField fx:id="campoNumSocio" editable="false" layoutX="181.0" layoutY="137.0" prefHeight="26.0" prefWidth="202.0" />
+        <TextField fx:id="campoNombre" editable="false" layoutX="181.0" layoutY="174.0" prefHeight="26.0" prefWidth="202.0" />
+        <TextField fx:id="campoNif" editable="false" layoutX="181.0" layoutY="213.0" prefHeight="26.0" prefWidth="202.0" />
+        <TextField fx:id="campoTipo" editable="false" layoutX="181.0" layoutY="251.0" prefHeight="26.0" prefWidth="202.0" />
+        <TextField fx:id="campoImporte" editable="false" layoutX="181.0" layoutY="293.0" prefHeight="26.0" prefWidth="202.0" />
+
+        <ImageView fitHeight="120.0" fitWidth="156.0" layoutX="435.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../../media/Senderos_y_Montanas_logo.png" />
+          </image>
+        </ImageView>
+        <Button fx:id="btnBuscarInfoSocio" layoutX="466.0" layoutY="81.0" mnemonicParsing="false" onAction="#onBuscarInfoSocioButtonClick" prefHeight="26.0" prefWidth="59.0" text="Buscar" />
+        <Button fx:id="btnMostrarFactura" layoutX="395.0" layoutY="315.0" mnemonicParsing="false" onAction="#onMostrarFacturaButtonClick" text="Mostrar Factura" />
+        <Button fx:id="btnVolverMenuPrincipal" layoutX="509.0" layoutY="315.0" mnemonicParsing="false" onAction="#onVolverMenuPrincipalButtonClick" text="Menu Principal" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

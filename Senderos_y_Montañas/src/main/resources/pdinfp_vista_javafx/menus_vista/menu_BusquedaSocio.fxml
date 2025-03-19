@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdinfp_controlador_javafx.ControladoresSocios.ControladorMostrarSocio">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Button fx:id="btnSelecEstandar" layoutX="84.0" layoutY="81.0" mnemonicParsing="false" onAction="#onSelecEstandarButtonClick" prefHeight="27.0" prefWidth="178.0" text="Socios Estandars" />
+            <Button fx:id="btnSelectFederado" layoutX="84.0" layoutY="121.0" mnemonicParsing="false" onAction="#onSelectFederadoButtonClick" prefHeight="27.0" prefWidth="178.0" text="Socios Federados" />
+            <Button fx:id="btnSelecInfantil" layoutX="84.0" layoutY="163.0" mnemonicParsing="false" onAction="#onSelecInfantilButtonClick" prefHeight="27.0" prefWidth="178.0" text="Socios Infantiles" />
+            <Button fx:id="btnSelecTodos" layoutX="84.0" layoutY="204.0" mnemonicParsing="false" onAction="#onSelecTodosButtonClick" prefHeight="27.0" prefWidth="178.0" text="Todos los socios" />
+            <Button fx:id="btnSelecXNif" layoutX="84.0" layoutY="245.0" mnemonicParsing="false" onAction="#onSelecXNifButtonClick" prefHeight="27.0" prefWidth="178.0" text="Buscar por nif" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="374.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../media/Senderos_y_Montanas_logo.png" />
+               </image>
+            </ImageView>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

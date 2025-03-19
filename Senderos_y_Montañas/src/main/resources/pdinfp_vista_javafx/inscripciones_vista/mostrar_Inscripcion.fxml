@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdinfp_controlador_javafx.ControladoresInscripciones.ControladorMostrarInscripcion">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="256.0" layoutY="14.0" prefHeight="20.0" prefWidth="142.0" text="Buscar Inscripciones">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="72.0" prefHeight="18.0" prefWidth="171.0" text="1. Inscripciones de un Socio">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="25.0" layoutY="118.0" prefHeight="18.0" prefWidth="171.0" text="Indica el numero de Socio" />
+            <TextField fx:id="campoNumeroSocio" layoutX="220.0" layoutY="114.0" prefHeight="26.0" prefWidth="166.0" />
+            <Label layoutX="25.0" layoutY="227.0" prefHeight="18.0" prefWidth="190.0" text="2. Inscripciones de una Excursion">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font></Label>
+            <Label layoutX="25.0" layoutY="270.0" text="Indica el nombre de la Excursion" />
+            <TextField fx:id="campoNombreExcursion" layoutX="220.0" layoutY="265.0" prefHeight="26.0" prefWidth="166.0" />
+            <ImageView fitHeight="120.0" fitWidth="156.0" layoutX="446.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../media/Senderos_y_Montanas_logo.png" />
+               </image></ImageView>
+            <Button fx:id="btnBuscarPorSocio" layoutX="144.0" layoutY="164.0" mnemonicParsing="false" onAction="#onBuscarInscripcionPorSocioButtonClick" text="Buscar por Socio" />
+            <Button fx:id="btnBuscarPorExcursion" layoutX="133.0" layoutY="314.0" mnemonicParsing="false" onAction="#onBuscarInscripcionPorExcursionButtonClick" text="Buscar por Excursion" />
+            <Button fx:id="btnVolverMenuPrincipal" layoutX="520.0" layoutY="314.0" mnemonicParsing="false" onAction="#onVolverMenuPrincipalButtonClick" text="Menu Principal" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
